@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page-webpack-fulljs",
+  "version": "1.0.0",
+  "description": "A webapp made with all DOM elements that were created only with JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cebotaritigran/restaurant-page-webpack-fulljs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cebotaritigran/restaurant-page-webpack-fulljs/issues"
+  },
+  "homepage": "https://github.com/cebotaritigran/restaurant-page-webpack-fulljs#readme",
+  "devDependencies": {
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1"
+  }
+}
