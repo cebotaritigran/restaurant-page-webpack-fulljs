@@ -25,7 +25,8 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 15px;
+    gap: 5px;
     box-shadow: 0px 2px 2px rgb(225, 225, 225);
 }
 
@@ -37,7 +38,6 @@ body{
 
 .header-tabs{
     display: flex;
-    height: 40px;
     align-items: center;
     font-size: 14px;
     gap: 30px;
@@ -45,11 +45,36 @@ body{
     cursor: pointer;
 }
 
-/* HOME */
+.home-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+}
+
+.menu-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+}
+
+.contact-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+}
+
+/* MAIN */
 .main{
     flex:1;
     display: flex;
 }
+
 .home{
     flex:1;
     background-color: green;
@@ -90,5 +115,10 @@ a{
 @media only screen and (max-width: 600px) {
     .logo{
         font-size: 52px;
+    }
+    .home-tab,
+    .menu-tab,
+    .contact-tab {
+        width: auto;
     }
 }
