@@ -12,7 +12,8 @@ body{
 
 #content{
    display: flex;
-   flex-direction: column; 
+   flex-direction: column;
+   justify-content: space-between; 
    height: 100%;
 }
 
@@ -42,4 +43,32 @@ body{
     gap: 30px;
     letter-spacing: 3px;
     cursor: pointer;
+}
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    bottom: 0;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        font-size: 52px;
+    }
 }
