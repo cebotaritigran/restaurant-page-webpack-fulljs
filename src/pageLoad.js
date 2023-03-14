@@ -4,8 +4,11 @@ import { home } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
 export function pageLoad() {
-
+    const content = document.querySelector('#content');
     header();
+    const main = document.createElement('div');
+    main.classList.add('main');
+    content.appendChild(main);
     const homeTab = document.querySelector('.home-tab')
     homeTab.addEventListener('click', () => {
         home();

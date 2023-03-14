@@ -46,6 +46,10 @@ body{
 }
 
 /* HOME */
+.main{
+    flex:1;
+    display: flex;
+}
 .home{
     flex:1;
     background-color: green;
