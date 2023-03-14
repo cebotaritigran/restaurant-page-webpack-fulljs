@@ -1,0 +1,45 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(254, 241, 233);
+}
+
+#content{
+   display: flex;
+   flex-direction: column; 
+   height: 100%;
+}
+
+/*HEADER*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 2px 2px rgb(225, 225, 225);
+}
+
+.logo{
+    font-size: 78px;
+    font-family: 'Tangerine', cursive;
+    cursor: default;
+}
+
+.header-tabs{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-size: 14px;
+    gap: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}

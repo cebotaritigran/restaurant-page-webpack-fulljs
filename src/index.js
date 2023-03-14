@@ -1,4 +1,4 @@
 import './style.css';
-import { pageLoad } from './pageLoad';
+import { pageLoad as loadPage} from './pageLoad';
 
-pageLoad();
+loadPage();
