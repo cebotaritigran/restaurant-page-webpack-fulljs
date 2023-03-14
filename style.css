@@ -10,13 +10,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 800px;
+    min-height: 100vh;
 }
 
 #content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 100vh;
 
 }
@@ -29,8 +31,8 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    padding: 15px;
     gap: 5px;
+    width: 100%;
     box-shadow: 0px 2px 2px rgb(225, 225, 225);
 }
 
@@ -58,8 +60,9 @@ body {
 }
 
 .menu-tab {
-    display: grid;
-    grid-template-columns: repeat(2,100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100px;
     height: 40px;
 }
@@ -79,8 +82,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 100%;
-    
+    width: 630px;
 }
 
 .home {
@@ -89,32 +91,81 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(73, 102, 127);
+    padding: 10px;
     height: 100%;
 }
 
 .home-content {
-    width: 90%;
+    width: 95%;
     height: 90%;
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    padding: 0px 0px;
+
     background-color: rgb(255, 254, 252);
 }
 
 h2 {
-    padding: 20px;
+    padding: 10px;
 }
 
 p {
-    padding: 20px;
+    padding: 10px;
 }
 
 .menu {
     flex: 1;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    background-color: rgb(73, 102, 127);
+    padding: 10px;
 }
+
+.item-one {
+    background: url(./assets/1.jpg);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 220px;
+}
+
+.item-two {
+    background: url(./assets/2.jpg);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 220px;
+}
+
+
+.item-three {
+    background: url(./assets/3.jpg);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 220px;
+}
+
+.item-four {
+    background: url(./assets/4.jpg);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 220px;
+}
+
+.item-five {
+    background: url(./assets/5.jpg);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 220px;
+}
+
+.item-six {
+    background: url(./assets/1.jpg);
+    background-size: 100% 100%;
+    width: 300px;
+    height: 220px;
+}
+
 
 .contact {
     flex: 1;
@@ -125,6 +176,7 @@ p {
 
 .footer {
     width: 100%;
+    margin-top: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,6 +197,12 @@ a {
 @media only screen and (max-width: 600px) {
     .logo {
         font-size: 52px;
+    }
+    .main{
+        width: auto;
+    }
+    .home{
+        padding: 10px;
     }
 
     .home-tab,
