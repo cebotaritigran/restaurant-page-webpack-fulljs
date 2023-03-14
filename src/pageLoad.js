@@ -22,5 +22,6 @@ export function pageLoad() {
     contactTab.addEventListener('click', () => {
         contact();
     })
+    home();
     footer();
 }
