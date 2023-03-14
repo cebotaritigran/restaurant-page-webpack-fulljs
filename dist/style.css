@@ -1,25 +1,29 @@
-:root{
+:root {
     font-family: 'Roboto', sans-serif;
 
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    height: 100vh;
     background-color: rgb(254, 241, 233);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 800px;
 }
 
-#content{
-   display: flex;
-   flex-direction: column;
-   justify-content: space-between; 
-   height: 100%;
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+
 }
 
 /*HEADER*/
 
-.header{
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,13 +34,13 @@ body{
     box-shadow: 0px 2px 2px rgb(225, 225, 225);
 }
 
-.logo{
+.logo {
     font-size: 78px;
     font-family: 'Tangerine', cursive;
     cursor: default;
 }
 
-.header-tabs{
+.header-tabs {
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -45,7 +49,7 @@ body{
     cursor: pointer;
 }
 
-.home-tab{
+.home-tab {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,15 +57,14 @@ body{
     height: 40px;
 }
 
-.menu-tab{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu-tab {
+    display: grid;
+    grid-template-columns: repeat(2,100px);
     width: 100px;
     height: 40px;
 }
 
-.contact-tab{
+.contact-tab {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,30 +73,57 @@ body{
 }
 
 /* MAIN */
-.main{
-    flex:1;
+.main {
+    flex: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    
 }
 
-.home{
-    flex:1;
-    background-color: green;
+.home {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(73, 102, 127);
+    height: 100%;
 }
 
-.menu{
-    flex:1;
-    background-color: rgb(128, 0, 0);
+.home-content {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0px 0px;
+    background-color: rgb(255, 254, 252);
 }
 
-.contact{
-    flex:1;
-    background-color: rgb(0, 13, 128);
+h2 {
+    padding: 20px;
 }
+
+p {
+    padding: 20px;
+}
+
+.menu {
+    flex: 1;
+
+}
+
+.contact {
+    flex: 1;
+
+}
+
 /* FOOTER */
 
-.footer{
-    position: absolute;
-    bottom: 0;
+.footer {
     width: 100%;
     display: flex;
     align-items: center;
@@ -105,7 +135,7 @@ body{
     letter-spacing: 2px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -113,12 +143,17 @@ a{
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 600px) {
-    .logo{
+    .logo {
         font-size: 52px;
     }
+
     .home-tab,
     .menu-tab,
     .contact-tab {
         width: auto;
+    }
+
+    .images {
+        display: none;
     }
 }
