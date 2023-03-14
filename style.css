@@ -1,0 +1,90 @@
+:root{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: rgb(254, 241, 233);
+}
+
+#content{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; 
+   height: 100%;
+}
+
+/*HEADER*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0px 2px 2px rgb(225, 225, 225);
+}
+
+.logo{
+    font-size: 78px;
+    font-family: 'Tangerine', cursive;
+    cursor: default;
+}
+
+.header-tabs{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-size: 14px;
+    gap: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+/* HOME */
+.home{
+    flex:1;
+    background-color: green;
+}
+
+.menu{
+    flex:1;
+    background-color: rgb(128, 0, 0);
+}
+
+.contact{
+    flex:1;
+    background-color: rgb(0, 13, 128);
+}
+/* FOOTER */
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(2, 2, 2);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        font-size: 52px;
+    }
+}
