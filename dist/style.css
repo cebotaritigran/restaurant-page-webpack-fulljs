@@ -45,17 +45,33 @@ body{
     cursor: pointer;
 }
 
+/* HOME */
+.home{
+    flex:1;
+    background-color: green;
+}
 
+.menu{
+    flex:1;
+    background-color: rgb(128, 0, 0);
+}
+
+.contact{
+    flex:1;
+    background-color: rgb(0, 13, 128);
+}
 /* FOOTER */
 
 .footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 20px;
     background-color: rgb(255, 255, 255);
     color: rgb(2, 2, 2);
-    bottom: 0;
     font-size: 12px;
     letter-spacing: 2px;
 }

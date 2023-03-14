@@ -11,13 +11,15 @@ export function header() {
     contactPage.textContent = 'CONTACT';
     const headerTabs = document.createElement('div');
 
-
+    // header
     headerPage.classList.add('header');
     logoDiv.classList.add('logo');
     headerTabs.classList.add('header-tabs');
-    // homePage.classList.add('header-tabs');
-    // menuPage.classList.add('header-tabs');
-    // reservetionPage.classList.add('header-tabs');
+
+    homePage.classList.add('home-tab');
+    menuPage.classList.add('menu-tab');
+    contactPage.classList.add('contact-tab');
+
     headerTabs.append(homePage, menuPage, contactPage);
     headerPage.append(logoDiv, headerTabs);
 
